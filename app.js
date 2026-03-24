@@ -124,8 +124,8 @@ class BJJFoundation {
             }
             this.videos = await techResponse.json();
             // Filter to only show videos from the UNIDADE channel
-            this.videos = this.videos.filter(v => v.channel_name && v.channel_name.toUpperCase() === 'UNIDADE');
-            console.log(`Loaded ${this.videos.length} technique videos (filtered to UNIDADE channel)`);
+            this.videos = this.videos.filter(v => v.channel_name && v.channel_name.toUpperCase() === 'UNIDADE ACADEMY');
+            console.log(`Loaded ${this.videos.length} technique videos (filtered to UNIDADE ACADEMY channel)`);
 
             // Load fight videos
             try {
@@ -137,8 +137,8 @@ class BJJFoundation {
                         video.isFight = true;
                     });
                     // Filter to only UNIDADE channel
-                    this.fightVideos = this.fightVideos.filter(v => v.channel_name && v.channel_name.toUpperCase() === 'UNIDADE');
-                    console.log(`Loaded ${this.fightVideos.length} fight videos (filtered to UNIDADE channel)`);
+                    this.fightVideos = this.fightVideos.filter(v => v.channel_name && v.channel_name.toUpperCase() === 'UNIDADE ACADEMY');
+                    console.log(`Loaded ${this.fightVideos.length} fight videos (filtered to UNIDADE ACADEMY channel)`);
                 }
             } catch (fightError) {
                 console.warn('Fight videos not available:', fightError);
