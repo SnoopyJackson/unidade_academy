@@ -1,8 +1,9 @@
 {
-  "name": "Unidade Study",
-  "short_name": "Unidade Study",
+  "name": "Unidade Academy",
+  "short_name": "Unidade Academy",
   "description": "UNIS DANS L'EFFORT, FORTS DANS LA VICTOIRE",
-  "start_url": "/index.html",
+  "start_url": ".",
+  "scope": ".",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",

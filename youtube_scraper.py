@@ -333,7 +333,7 @@ def main():
     today = datetime.datetime.now()
     day_of_week = today.weekday()  # 0=Monday, 6=Sunday
     
-    if day_of_week % 2 == 0:  # Even day (Mon, Wed, Fri)
+    if day_of_week == 1:  # Even day (Tue)
         print("="*60)
         print(f"Today is {today.strftime('%A')} - Scraping TECHNIQUE channels")
         print("="*60)

@@ -1,4 +1,4 @@
-// Unidade Study - Main Application
+// Unidade Academy - Main Application
 class BJJFoundation {
     constructor() {
         // Limit number of cards rendered by default for speed
