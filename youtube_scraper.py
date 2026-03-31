@@ -333,37 +333,34 @@ def main():
     today = datetime.datetime.now()
     day_of_week = today.weekday()  # 0=Monday, 6=Sunday
     
-    if day_of_week == 3:  # Even day (Tue)
-        print("="*60)
-        print(f"Today is {today.strftime('%A')} - Scraping TECHNIQUE channels")
-        print("="*60)
-        print(f"Channels to scrape: {', '.join(BJJ_CHANNELS)}")
+    print("="*60)
+    print(f"Today is {today.strftime('%A')} - Scraping TECHNIQUE channels")
+    print("="*60)
+    print(f"Channels to scrape: {', '.join(BJJ_CHANNELS)}")
+    
+    # Scrape technique channels
+    all_videos = scrape_all_channels(BJJ_CHANNELS, max_results_per_channel=5000)
+    
+    # Save to JSON file
+    if all_videos:
+        save_to_json(all_videos, 'bjj_videos.json')
         
-        # Scrape technique channels
-        all_videos = scrape_all_channels(BJJ_CHANNELS, max_results_per_channel=5000)
-        
-        # Save to JSON file
-        if all_videos:
-            save_to_json(all_videos, 'bjj_videos.json')
-            
-            # Also create a simplified version with just the requested fields
-            simplified_videos = [
-                {
-                    'channel_name': video['channel_name'],
-                    'title': video['title'],
-                    'description': video['description'],
-                    'tags': video['tags'],
-                    'youtube_link': video['youtube_link'],
-                    'view_count': int(video.get('view_count', 0)),
-                    'language': video.get('default_audio_language', video.get('default_language', 'unknown'))
-                }
-                for video in all_videos
-            ]
-            save_to_json(simplified_videos, 'bjj_videos_simple.json')
-        else:
-            print("\nNo videos were collected.")
-    else:  # Odd day (Tue, Thu, Sat)
-        pass
+        # Also create a simplified version with just the requested fields
+        simplified_videos = [
+            {
+                'channel_name': video['channel_name'],
+                'title': video['title'],
+                'description': video['description'],
+                'tags': video['tags'],
+                'youtube_link': video['youtube_link'],
+                'view_count': int(video.get('view_count', 0)),
+                'language': video.get('default_audio_language', video.get('default_language', 'unknown'))
+            }
+            for video in all_videos
+        ]
+        save_to_json(simplified_videos, 'bjj_videos_simple.json')
+    else:
+        print("\nNo videos were collected.")
 
 
 if __name__ == '__main__':
