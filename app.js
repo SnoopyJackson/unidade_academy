@@ -17,88 +17,10 @@ class BJJFoundation {
             position: '',
             submission: '',
             takedown: '',
-            giNogi: '',
-            athlete: '' // Fight athlete filter
+            giNogi: ''
         };
         this.searchQuery = '';
         this.searchDebounceTimer = null; // Debounce timer for search input
-        
-        // Top BJJ athletes for filtering
-        this.TOP_ATHLETES = [
-            'Gordon Ryan',
-            'Mikey Musumeci',
-            'Tye Ruotolo',
-            'Kade Ruotolo',
-            'Nicholas Meregali',
-            'Felipe Pena',
-            'Lachlan Giles',
-            'Craig Jones',
-            'Kaynan Duarte',
-            'Mica Galvao',
-            'Marcus Almeida',
-            'Leandro Lo',
-            'Andre Galvao',
-            'Roger Gracie',
-            'Marcelo Garcia',
-            'Rafael Mendes',
-            'Gui Mendes',
-            'Cobrinha',
-            'Lucas Lepri',
-            'Rubens Charles',
-            'Gilbert Burns',
-            'Rodolfo Vieira',
-            'Marcus Buchecha',
-            'Joao Gabriel',
-            'Gabriel Arges',
-            'Tex Johnson',
-            'Andrew Tackett',
-            'Pedro Marinho',
-            'Giancarlo Bodoni',
-            'Dante Leon',
-            'Jozef Chen',
-            'Tommy Langaker',
-            'Roberto Jimenez',
-            'Erich Munis',
-            'Jonatha Alves',
-            'Fabricio Werdum',
-            'Erberth Santos',
-            'Gabriel Sousa',
-            'Isaac Doederlein',
-            'Ffion Davies',
-            'Mayssa Bastos',
-            'Bia Mesquita',
-            'Mackenzie Dern',
-            'Beatriz Mesquita',
-            'Ana Carolina Vieira',
-            'Nathiely Jesus',
-            'Gabi Garcia',
-            'Thamara Ferreira',
-            'Amanda Monteiro',
-            'Luiza Monteiro',
-            'Adam Wardzinski',
-            'Nicky Rod',
-            'Garry Tonon',
-            'Nicky Ryan',
-            'Tainan Dalpra',
-            'Keenan Cornelius',
-            'Rafa Lovato Jr.',
-            'JT Torres',
-            'Bruno Malfacine',
-            'Mackenzie Dern',
-            'Joao Miyao',
-            'Paulo Miyao',
-            'Diogo Reis',
-            'Melqui Galvao',
-            'Cole Abate',
-            'Ryan Hall',
-            'Geo Martinez',
-            'Eddie Cummings',
-            'Diego Pato', 
-            'Ethan Crelinsten', 
-            'Helena Crevar', 
-            'Sarah Galvão'
-                        
-        ];
         
         this.init();
     }
@@ -228,48 +150,6 @@ class BJJFoundation {
         populateFromCounts('takedown-filter', takedownCounts);
         populateFromCounts('escape-filter', escapeCounts);
 
-        // Populate athlete filter: only include TOP_ATHLETES but rank them by actual fight counts when possible
-        const athleteFilter = document.getElementById('athlete-filter');
-        if (athleteFilter) {
-            // Build counts map from fight videos (this.fightVideos)
-            const athleteCounts = new Map();
-            const incAth = (name) => {
-                if (!name) return;
-                const n = String(name).trim();
-                if (!n) return;
-                athleteCounts.set(n, (athleteCounts.get(n) || 0) + 1);
-            };
-
-            if (Array.isArray(this.fightVideos) && this.fightVideos.length > 0) {
-                this.fightVideos.forEach(v => {
-                    if (!v.athletes) return;
-                    if (Array.isArray(v.athletes)) {
-                        v.athletes.forEach(a => incAth(a));
-                    } else if (typeof v.athletes === 'string') {
-                        incAth(v.athletes);
-                    }
-                });
-            }
-
-            // Remove existing options except the default
-            while (athleteFilter.options.length > 1) athleteFilter.remove(1);
-
-            // Build list of TOP_ATHLETES with their counts (0 if none)
-            const topWithCounts = this.TOP_ATHLETES.map(name => {
-                const cnt = athleteCounts.get(name) || 0;
-                return { name, cnt };
-            });
-
-            // Sort TOP_ATHLETES by count desc; if counts are equal, keep the original order
-            topWithCounts.sort((a, b) => b.cnt - a.cnt);
-
-            topWithCounts.forEach(({ name, cnt }) => {
-                const option = document.createElement('option');
-                option.value = name.toLowerCase();
-                option.textContent = cnt > 0 ? `${name} (${cnt})` : name;
-                athleteFilter.appendChild(option);
-            });
-        }
     }
 
     setupEventListeners() {
@@ -347,15 +227,6 @@ class BJJFoundation {
             this.applyFilters();
         });
 
-        // Athlete filter (for fight videos)
-        const athleteFilter = document.getElementById('athlete-filter');
-        if (athleteFilter) {
-            athleteFilter.addEventListener('change', (e) => {
-                this.filters.athlete = e.target.value;
-                this.applyFilters();
-            });
-        }
-
         // Reset button
         document.getElementById('reset-filters').addEventListener('click', () => {
             this.resetFilters();
@@ -393,9 +264,6 @@ class BJJFoundation {
                 f.guard || f.pass || f.sweep || 
                 f.position || f.submission || f.takedown;
             
-            // Check if athlete filter is active
-            const hasAthleteFilter = f.athlete;
-
             // For fight videos (have athletes field)
             if (video.isFight) {
                 // If technique filters are set, hide all fight videos
@@ -403,25 +271,8 @@ class BJJFoundation {
                     return false;
                 }
                 
-                // If athlete filter is set, must match
-                if (hasAthleteFilter) {
-                    if (!video.athletes || !Array.isArray(video.athletes)) {
-                        return false;
-                    }
-                    const hasAthlete = video.athletes.some(athlete => 
-                        athlete.toLowerCase().includes(f.athlete)
-                    );
-                    return hasAthlete;
-                }
-                
                 // No filters active - show fight video
                 return true;
-            }
-
-            // For technique videos (no athletes field)
-            // If athlete filter is set, hide all technique videos
-            if (hasAthleteFilter) {
-                return false;
             }
             
             // Must have classification
@@ -518,7 +369,6 @@ class BJJFoundation {
     }
 
     // Cascading filters: repopulate each dropdown based on videos matching all OTHER active filters
-    // Fight filters (athlete) are excluded from cascading
     updateAvailableFilterOptions() {
         // Technique classification dropdowns
         const techniqueFilterConfigs = [
@@ -848,8 +698,7 @@ class BJJFoundation {
             position: '',
             submission: '',
             takedown: '',
-            giNogi: '',
-            athlete: ''
+            giNogi: ''
         };
 
         // Reset search
@@ -867,8 +716,6 @@ class BJJFoundation {
         document.getElementById('takedown-filter').value = '';
         const giNogiSelect = document.getElementById('gi-filter');
         if (giNogiSelect) giNogiSelect.value = '';
-        const athleteSelect = document.getElementById('athlete-filter');
-        if (athleteSelect) athleteSelect.value = '';
 
         // Reapply filters (will show all)
         this.applyFilters();
