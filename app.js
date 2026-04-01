@@ -21,6 +21,7 @@ class BJJFoundation {
         };
         this.searchQuery = '';
         this.searchDebounceTimer = null; // Debounce timer for search input
+        this.initialized = false;
         
         this.init();
     }
@@ -31,6 +32,7 @@ class BJJFoundation {
             this.populateFilters();
             this.setupEventListeners();
             this.applyFilters();
+            this.initialized = true;
         } catch (error) {
             console.error('Error initializing app:', error);
             this.showError('Failed to load videos. Please check if bjj_simple_processed.json exists.');
@@ -366,6 +368,12 @@ class BJJFoundation {
 
         this.renderVideos();
         this.updateResultsCount();
+        if (this.initialized) {
+            const videosSection = document.querySelector('.videos-section');
+            if (videosSection) {
+                videosSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
     }
 
     // Cascading filters: repopulate each dropdown based on videos matching all OTHER active filters
