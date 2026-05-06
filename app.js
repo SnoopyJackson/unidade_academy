@@ -510,7 +510,7 @@ class BJJFoundation {
         // Extract video ID from YouTube link
         const videoId = this.extractVideoId(video.youtube_link);
         const thumbnailUrl = videoId 
-            ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`
+            ? `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`
             : 'https://via.placeholder.com/480x360?text=No+Thumbnail';
 
         // Get language flag
