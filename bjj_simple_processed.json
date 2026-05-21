@@ -1,11 +1,47 @@
 [
   {
     "channel_name": "UNIDADE Academy",
+    "title": "ARMBAR ESCAPE ( GI, NO GI, ESCAPE, DEFENSE)",
+    "description": "",
+    "tags": [],
+    "youtube_link": "https://www.youtube.com/watch?v=fgJU96VD_zY",
+    "view_count": 8,
+    "language": "fr",
+    "classification": {
+      "submission": [
+        "Armbar"
+      ],
+      "technique": [
+        "Escape",
+        "Defense"
+      ]
+    }
+  },
+  {
+    "channel_name": "UNIDADE Academy",
+    "title": "TRIANGLE CHOKE ESCAPE (GI, NO GI, ESCAPE, DEFENSE)",
+    "description": "",
+    "tags": [],
+    "youtube_link": "https://www.youtube.com/watch?v=6GUxisRVsiM",
+    "view_count": 5,
+    "language": "fr",
+    "classification": {
+      "submission": [
+        "Triangle"
+      ],
+      "technique": [
+        "Escape",
+        "Defense"
+      ]
+    }
+  },
+  {
+    "channel_name": "UNIDADE Academy",
     "title": "BACK TAKE #3* (GI, NO GI, ESCAPE, DEFENSE)",
     "description": "",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=0jwnp4jucOU",
-    "view_count": 25,
+    "view_count": 27,
     "language": "unknown",
     "classification": {
       "position": [
@@ -23,7 +59,7 @@
     "description": "",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=pXw3X3l9G40",
-    "view_count": 25,
+    "view_count": 26,
     "language": "unknown",
     "classification": {
       "technique": [
@@ -39,7 +75,7 @@
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=EyOqsjzIiNA",
     "view_count": 21,
-    "language": "fr",
+    "language": "unknown",
     "classification": {
       "technique": [
         "Escape",
@@ -53,7 +89,7 @@
     "description": "",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=sTArLahulLs",
-    "view_count": 28,
+    "view_count": 29,
     "language": "unknown",
     "classification": {
       "technique": [
@@ -68,7 +104,7 @@
     "description": "",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=iiHMN61TQYw",
-    "view_count": 31,
+    "view_count": 32,
     "language": "fr",
     "classification": {
       "guard_type": [
@@ -128,7 +164,7 @@
     "description": "",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=ORBAH-nwEv0",
-    "view_count": 33,
+    "view_count": 35,
     "language": "fr",
     "classification": {
       "guard_type": [
@@ -169,7 +205,7 @@
     "description": "",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=lGFw86GLWKQ",
-    "view_count": 73,
+    "view_count": 75,
     "language": "fr",
     "classification": {
       "guard_type": [
@@ -186,7 +222,7 @@
     "description": "",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=5zsRc2Mo9o8",
-    "view_count": 72,
+    "view_count": 75,
     "language": "fr",
     "classification": {
       "guard_type": [
@@ -277,7 +313,7 @@
     "description": "Aujourd’hui, on vous emmène au cœur du club pour une petite compétition interne, entre élèves 👊\nIci, pas de pression, pas de stress comme dans une grande compétition… juste l’envie de se tester, de progresser et surtout de partager un bon moment ensemble.\nCes rencontres permettent à chacun de sortir de sa zone de confort, de prendre confiance et parfois même de découvrir des capacités qu’on ne soupçonnait pas 💥\nLe tout dans une ambiance conviviale, bienveillante, avec à la clé un petit trophée personnalisé pour marquer le coup 🏆\nQue vous soyez débutant ou confirmé, ce genre d’événement est une super étape pour évoluer… et peut-être vous donner envie d’aller encore plus loin !",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=nJTQ_PR9mNE",
-    "view_count": 445,
+    "view_count": 454,
     "language": "fr",
     "classification": {}
   },
@@ -674,7 +710,7 @@
     "description": "Vidéo de présentation de la chaîne.\n\nAbonne toi pour plus de contenu !",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=X93tH4mLpEg",
-    "view_count": 236,
+    "view_count": 245,
     "language": "fr",
     "classification": {}
   },
