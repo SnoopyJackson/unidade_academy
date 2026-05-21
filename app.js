@@ -1,4 +1,4 @@
-// Unidade Academy - Main Application
+// Conexão Academy - Main Application
 class BJJFoundation {
     constructor() {
         // Limit number of cards rendered by default for speed
@@ -47,7 +47,7 @@ class BJJFoundation {
                 throw new Error('Failed to load technique videos');
             }
             this.videos = await techResponse.json();
-            // Filter to only show videos from the UNIDADE channel
+            // Filter to only show videos from the CONEXÃO channel
             this.videos = this.videos.filter(v => v.channel_name && v.channel_name.toUpperCase() === 'UNIDADE ACADEMY');
             console.log(`Loaded ${this.videos.length} technique videos (filtered to UNIDADE ACADEMY channel)`);
 
@@ -60,7 +60,7 @@ class BJJFoundation {
                     this.fightVideos.forEach(video => {
                         video.isFight = true;
                     });
-                    // Filter to only UNIDADE channel
+                    // Filter to only CONEXÃO channel
                     this.fightVideos = this.fightVideos.filter(v => v.channel_name && v.channel_name.toUpperCase() === 'UNIDADE ACADEMY');
                     console.log(`Loaded ${this.fightVideos.length} fight videos (filtered to UNIDADE ACADEMY channel)`);
                 }

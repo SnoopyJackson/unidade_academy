@@ -6,7 +6,7 @@
 }
 
 :root {
-    /* Unidade Study - Black & Yellow Theme */
+    /* Conexão Academy - Black & Yellow Theme */
     --primary-dark: #000000;
     --secondary-dark: #111111;
     --accent-gold: #FFD700;
@@ -36,17 +36,19 @@ body {
 
 /* Hero Logo */
 .hero-logo {
-    max-width: 200px;
+    max-width: 320px;
+    width: 80%;
     height: auto;
-    margin-bottom: 15px;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+    margin-bottom: 20px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 12px rgba(0,0,0,0.4));
 }
 
 .header-logo {
-    height: 36px;
+    height: 40px;
     width: auto;
-    border-radius: 6px;
+    max-width: 180px;
+    object-fit: contain;
     margin-right: 10px;
 }
 
@@ -57,7 +59,7 @@ body {
     background-color: #000000; /* Fallback color while image loads */
     background-image: 
         linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(10, 14, 39, 0.75) 100%),
-        url('banner.png');
+        url('Logo-Conexao-horizontal-blanc.png');
     
     /* Option 2: Current gradient background (default)
     background: linear-gradient(135deg, #000000 0%, #1a1a2e 50%, #16213e 100%);
