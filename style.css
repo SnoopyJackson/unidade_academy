@@ -865,31 +865,49 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-banner {
-        height: 300px;
+        height: auto;
+        min-height: 260px;
+        padding: 36px 16px;
+        background-size: contain;
         background-position: center center;
-        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .hero-logo {
+        width: 85%;
+        max-width: 240px;
+        margin-bottom: 14px;
     }
 
     .hero-banner .logo h1 {
-        font-size: 2.5rem;
-        letter-spacing: 4px;
-        text-shadow: 0 3px 15px rgba(0, 0, 0, 0.9);
+        font-size: 2rem;
+        letter-spacing: 3px;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
     }
 
     .hero-banner .tagline {
-        font-size: 1rem;
+        font-size: 0.9rem;
         letter-spacing: 1px;
-        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+        text-shadow: 0 1px 6px rgba(0, 0, 0, 0.9);
     }
 
     .hero-subtitle {
-        font-size: 0.85rem;
-        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+        font-size: 0.8rem;
+        text-shadow: 0 1px 6px rgba(0, 0, 0, 0.9);
+    }
+
+    .header {
+        padding: 12px 0;
     }
 
     .header-title {
-        font-size: 1.2rem;
+        font-size: 1rem;
         letter-spacing: 2px;
+    }
+
+    .header-logo {
+        height: 32px;
+        max-width: 140px;
     }
 
     .search-section {
@@ -901,72 +919,6 @@ body {
     .header.scrolled ~ .search-section {
         position: sticky;
         top: 53px;
-    }
-
-    .search-input {
-        font-size: 1rem;
-        padding: 14px 0;
-    }
-
-    .filters-section {
-        position: relative;
-        top: 0;
-        padding: 20px 0;
-    }
-
-    .filters-container {
-        grid-template-columns: 1fr;
-        gap: 12px;
-    }
-
-    .videos-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .video-title {
-        font-size: 1rem;
-    }
-
-    .tag {
-        font-size: 0.7rem;
-        padding: 4px 10px;
-    }
-    .hero-banner {
-        height: 250px;
-        background-position: center center;
-        background-size: cover;
-    }
-
-    .hero-banner .logo h1 {
-        font-size: 2rem;
-        letter-spacing: 3px;
-        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
-    }
-
-    .hero-banner .tagline {
-        font-size: 0.85rem;
-        text-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
-    }
-
-    .hero-subtitle {
-        font-size: 0.75rem;
-        text-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
-    }
-    .hero-banner .tagline {
-        font-size: 0.85rem;
-    }
-
-    .hero-subtitle {
-        font-size: 0.75rem;
-    }
-
-    .header {
-        padding: 12px 0;
-    }
-
-    .header-title {
-        font-size: 1rem;
     }
 
     .search-box {
@@ -989,6 +941,11 @@ body {
         padding: 15px 0;
     }
 
+    .filters-container {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
     .filter-select {
         padding: 10px 12px;
         font-size: 0.9rem;
@@ -999,8 +956,22 @@ body {
         font-size: 0.9rem;
     }
 
+    .videos-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .video-title {
+        font-size: 1rem;
+    }
+
     .video-content {
         padding: 15px;
+    }
+
+    .tag {
+        font-size: 0.7rem;
+        padding: 4px 10px;
     }
 }
 
