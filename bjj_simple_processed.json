@@ -1,11 +1,93 @@
 [
   {
     "channel_name": "UNIDADE Academy",
+    "title": "MOUNT POSITION ESCAPE ( GI. NO GI, ESCAPE, DEFENSE)",
+    "description": "",
+    "tags": [],
+    "youtube_link": "https://www.youtube.com/watch?v=N-czxW00B3I",
+    "view_count": 30,
+    "language": "fr",
+    "classification": {
+      "position": [
+        "Mount"
+      ],
+      "technique": [
+        "Escape",
+        "Defense"
+      ]
+    }
+  },
+  {
+    "channel_name": "UNIDADE Academy",
+    "title": "LONG STEP #2 ( GI, PASS)",
+    "description": "",
+    "tags": [],
+    "youtube_link": "https://www.youtube.com/watch?v=lgWB8m7e8nA",
+    "view_count": 13,
+    "language": "fr",
+    "classification": {
+      "pass": [
+        "Guard Pass",
+        "Long Step"
+      ]
+    }
+  },
+  {
+    "channel_name": "UNIDADE Academy",
+    "title": "LONG STEP ( GI, NO GI , PASS)",
+    "description": "",
+    "tags": [],
+    "youtube_link": "https://www.youtube.com/watch?v=TsIUFkYHe3w",
+    "view_count": 22,
+    "language": "fr",
+    "classification": {
+      "pass": [
+        "Guard Pass",
+        "Long Step"
+      ]
+    }
+  },
+  {
+    "channel_name": "UNIDADE Academy",
+    "title": "KISS OF THE DRAGON ( GI, NO GI, BACK TAKE, POSITION)",
+    "description": "",
+    "tags": [],
+    "youtube_link": "https://www.youtube.com/watch?v=uOfmItczdLU",
+    "view_count": 24,
+    "language": "fr",
+    "classification": {
+      "position": [
+        "Back Control"
+      ],
+      "sweep": [
+        "Kiss Of The Dragon"
+      ]
+    }
+  },
+  {
+    "channel_name": "UNIDADE Academy",
+    "title": "TACTICAL STAND UP FROM DELARIVA (GI, SWEEP)",
+    "description": "",
+    "tags": [],
+    "youtube_link": "https://www.youtube.com/watch?v=BXiRX4WC1Ro",
+    "view_count": 29,
+    "language": "fr",
+    "classification": {
+      "guard_type": [
+        "🪝 De La Riva"
+      ],
+      "sweep": [
+        "Sweep"
+      ]
+    }
+  },
+  {
+    "channel_name": "UNIDADE Academy",
     "title": "ARMBAR ESCAPE ( GI, NO GI, ESCAPE, DEFENSE)",
     "description": "",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=fgJU96VD_zY",
-    "view_count": 53,
+    "view_count": 55,
     "language": "unknown",
     "classification": {
       "submission": [
@@ -23,7 +105,7 @@
     "description": "",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=6GUxisRVsiM",
-    "view_count": 57,
+    "view_count": 61,
     "language": "unknown",
     "classification": {
       "submission": [
@@ -89,7 +171,7 @@
     "description": "",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=sTArLahulLs",
-    "view_count": 38,
+    "view_count": 40,
     "language": "unknown",
     "classification": {
       "technique": [
@@ -105,7 +187,7 @@
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=iiHMN61TQYw",
     "view_count": 32,
-    "language": "fr",
+    "language": "unknown",
     "classification": {
       "guard_type": [
         "🕳️ Deep Half Guard"
@@ -125,7 +207,7 @@
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=K4Gra6p2uxA",
     "view_count": 26,
-    "language": "fr",
+    "language": "unknown",
     "classification": {
       "guard_type": [
         "🕳️ Deep Half Guard"
@@ -164,7 +246,7 @@
     "description": "",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=ORBAH-nwEv0",
-    "view_count": 38,
+    "view_count": 39,
     "language": "unknown",
     "classification": {
       "guard_type": [
@@ -222,7 +304,7 @@
     "description": "",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=5zsRc2Mo9o8",
-    "view_count": 81,
+    "view_count": 94,
     "language": "unknown",
     "classification": {
       "guard_type": [
@@ -239,7 +321,7 @@
     "description": "",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=8belUYAhQUc",
-    "view_count": 69,
+    "view_count": 70,
     "language": "unknown",
     "classification": {
       "submission": [
@@ -313,7 +395,7 @@
     "description": "Aujourd’hui, on vous emmène au cœur du club pour une petite compétition interne, entre élèves 👊\nIci, pas de pression, pas de stress comme dans une grande compétition… juste l’envie de se tester, de progresser et surtout de partager un bon moment ensemble.\nCes rencontres permettent à chacun de sortir de sa zone de confort, de prendre confiance et parfois même de découvrir des capacités qu’on ne soupçonnait pas 💥\nLe tout dans une ambiance conviviale, bienveillante, avec à la clé un petit trophée personnalisé pour marquer le coup 🏆\nQue vous soyez débutant ou confirmé, ce genre d’événement est une super étape pour évoluer… et peut-être vous donner envie d’aller encore plus loin !",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=nJTQ_PR9mNE",
-    "view_count": 484,
+    "view_count": 485,
     "language": "fr",
     "classification": {}
   },
@@ -435,7 +517,7 @@
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=9fYarfQNEFw",
     "view_count": 43,
-    "language": "fr",
+    "language": "unknown",
     "classification": {
       "guard_type": [
         "🪢 Lasso Guard"
@@ -587,7 +669,7 @@
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=F00bLenXlDQ",
     "view_count": 90,
-    "language": "fr",
+    "language": "unknown",
     "classification": {
       "position": [
         "Back Control"
@@ -651,7 +733,7 @@
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=jny110hpCb0",
     "view_count": 71,
-    "language": "fr",
+    "language": "unknown",
     "classification": {
       "submission": [
         "Bow And Arrow"
