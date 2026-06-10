@@ -5,7 +5,7 @@
     "description": "",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=om4y8ezGs6Q",
-    "view_count": 24,
+    "view_count": 26,
     "language": "fr",
     "classification": {
       "submission": [
@@ -19,7 +19,7 @@
     "description": "",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=i40TdxdEOqY",
-    "view_count": 37,
+    "view_count": 38,
     "language": "fr",
     "classification": {
       "submission": [
@@ -33,7 +33,7 @@
     "description": "",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=oM-YeDmGfKQ",
-    "view_count": 44,
+    "view_count": 47,
     "language": "fr",
     "classification": {
       "submission": [
@@ -48,7 +48,7 @@
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=S-pzi2BAvw8",
     "view_count": 29,
-    "language": "fr",
+    "language": "unknown",
     "classification": {}
   },
   {
@@ -387,7 +387,7 @@
     "description": "",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=5li5ls7OQdY",
-    "view_count": 114,
+    "view_count": 115,
     "language": "unknown",
     "classification": {
       "guard_type": [
