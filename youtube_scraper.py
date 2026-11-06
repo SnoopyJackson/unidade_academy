@@ -17,7 +17,7 @@ import time
 API_KEY = os.environ.get('YOUTUBE_API_KEY')
 
 # List of BJJ channels to scrape
-BJJ_CHANNELS = ["@ArnaudPiétéUnidade"
+BJJ_CHANNELS = ["@unidadeacademy"
 ]
 
 
