@@ -1,11 +1,28 @@
 [
   {
     "channel_name": "UNIDADE Academy",
+    "title": "CLOSED GUARD ESCAPE #2 ( GI, NO GI)",
+    "description": "",
+    "tags": [],
+    "youtube_link": "https://www.youtube.com/watch?v=McviEKuzXX0",
+    "view_count": 8,
+    "language": "fr",
+    "classification": {
+      "guard_type": [
+        "🔒 Closed Guard"
+      ],
+      "technique": [
+        "Escape"
+      ]
+    }
+  },
+  {
+    "channel_name": "UNIDADE Academy",
     "title": "CLOSED GUARD ESCAPE (GI)",
     "description": "",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=FljSInDALwg",
-    "view_count": 9,
+    "view_count": 36,
     "language": "fr",
     "classification": {
       "guard_type": [
@@ -22,7 +39,7 @@
     "description": "",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=nPV-nqZrmg8",
-    "view_count": 130,
+    "view_count": 137,
     "language": "unknown",
     "classification": {
       "position": [
@@ -39,7 +56,7 @@
     "description": "",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=wJwOfjWS9YQ",
-    "view_count": 81,
+    "view_count": 83,
     "language": "unknown",
     "classification": {
       "submission": [
@@ -88,7 +105,7 @@
     "description": "🥋 Scissor Sweep depuis la garde fermée. Une technique simple et efficace à ajouter à votre jeu.\n\n#bjj #jiujitsu",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=Bh_gD-Co-XY",
-    "view_count": 1352,
+    "view_count": 1355,
     "language": "unknown",
     "classification": {
       "guard_type": [
@@ -571,7 +588,7 @@
     "description": "Aujourd’hui, on vous emmène au cœur du club pour une petite compétition interne, entre élèves 👊\nIci, pas de pression, pas de stress comme dans une grande compétition… juste l’envie de se tester, de progresser et surtout de partager un bon moment ensemble.\nCes rencontres permettent à chacun de sortir de sa zone de confort, de prendre confiance et parfois même de découvrir des capacités qu’on ne soupçonnait pas 💥\nLe tout dans une ambiance conviviale, bienveillante, avec à la clé un petit trophée personnalisé pour marquer le coup 🏆\nQue vous soyez débutant ou confirmé, ce genre d’événement est une super étape pour évoluer… et peut-être vous donner envie d’aller encore plus loin !",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=nJTQ_PR9mNE",
-    "view_count": 691,
+    "view_count": 695,
     "language": "unknown",
     "classification": {}
   },
@@ -791,7 +808,7 @@
     "description": "",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=LdT8uwEaMxo",
-    "view_count": 98,
+    "view_count": 99,
     "language": "unknown",
     "classification": {
       "guard_type": [
@@ -827,7 +844,7 @@
     "description": "🇫🇷 K-Guard → sweep à la cheville.\nPrincipe : déséquilibrer en attaquant la cheville avec la jambe.\n\nÉtapes :\n\nEntrer en K-Guard et contrôler la jambe.\nPlacer sa jambe contre la cheville adverse.\nTirer et pousser pour créer le déséquilibre.\nBasculer l’adversaire au sol.\n\nBut : renverser facilement en contrôlant la base.\n\n🇬🇧 K-Guard → ankle off-balance sweep \n\nConcept: off-balance by attacking the ankle with your leg.\n\nSteps:\n\nEnter K-Guard and control the leg.\nPlace your leg against opponent’s ankle.\nPush/pull to break balance.\nKnock them down and come on top.\n\nGoal: get a simple sweep by breaking the base.",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=iOGMjvl0x-o",
-    "view_count": 111,
+    "view_count": 118,
     "language": "unknown",
     "classification": {
       "guard_type": [
@@ -862,7 +879,7 @@
     "description": "🇫🇷 John Wayne Sweep depuis la demi-garde \nPrincipe : déséquilibrer latéralement sans lâcher la demi-garde.\n\nÉtapes :\n\nContrôler le haut du corps (underhook ou bras).\nBloquer la jambe avec la demi-garde.\nFaire un mouvement de “balancier” avec les hanches.\nTirer/ pousser pour faire tomber sur le côté.\n\nBut : renverser et arriver au-dessus.\n\n🇬🇧 John Wayne Sweep from half guard \n\nConcept: off-balance sideways while keeping half guard.\n\nSteps:\n\nControl upper body (underhook or arm).\nTrap the leg with half guard.\nRock hips side to side.\nPull/push to tip them over.\n\nGoal: sweep and come on top.",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=jXgdbo2yito",
-    "view_count": 114,
+    "view_count": 115,
     "language": "unknown",
     "classification": {
       "sweep": [
@@ -968,7 +985,7 @@
     "description": "Vidéo de présentation de la chaîne.\n\nAbonne toi pour plus de contenu !",
     "tags": [],
     "youtube_link": "https://www.youtube.com/watch?v=X93tH4mLpEg",
-    "view_count": 424,
+    "view_count": 427,
     "language": "unknown",
     "classification": {}
   },
